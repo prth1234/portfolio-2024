@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 
     // Email details
-    $to = "your-email@example.com"; // Replace with your email address
+    $to = "dearparthsingh@gmail.com; // Replace with your email address
     $subject = "New Email Submission";
     $message = "You have received a new email submission: " . $email;
     $headers = "From: no-reply@example.com"; // Replace with a valid sender email address

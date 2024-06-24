@@ -8129,12 +8129,11 @@ data from a wide variety of sources, such as social media, customer reviews & ne
                         <p class="text-small-2"></p>
                     </div>
                     <div class="form-block-4 w-form">
-                        <form id="email-form-2" name="email-form-2" data-name="Email Form 2" method="post"
-                            class="footer__form" data-wf-page-id="6488c93b137bd37e5762ce45"
-                            data-wf-element-id="8d354d54-e907-8f5b-e8f9-8af2dcc1ae31"><input
-                                class="text-field-4 w-input" maxlength="256" name="email-2" data-name="Email 2"
-                                placeholder="Your e-mail" type="email" id="email-2" required="" /><input type="submit"
-                                data-wait="Please wait..." class="submit-button-3 w-button" value="SUBMIT 🚀" /></form>
+                                          <form id="email-form" name="email-form" data-name="Email Form 2" method="post" class="footer__form" onsubmit="sendEmail(event)">
+                            <input class="text-field-4 w-input" maxlength="256" name="email" data-name="Email" placeholder="Your e-mail" type="email" id="email" required="" />
+                            <input type="submit" data-wait="Please wait..." class="submit-button-3 w-button" value="SUBMIT 🚀" />
+                        </form>
+
                         <div class="success-message w-form-done">
                             <div>Thank you! Your submission has been received!</div>
                         </div>
