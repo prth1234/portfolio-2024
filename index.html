@@ -1705,8 +1705,11 @@
                                         </div>
                                     </div>
                                 </nav>
-                            </div><a href="/contact-us" scramble-link="" rel="noopener noreferrer"
-                                class="nav-link-5 w-nav-link"><span scramble-text="">Contact me</span></a>
+                            </div>
+<a href="#" class="nav-link-5 w-nav-link" 
+   onclick="scrollToBottom(); return false;">
+    <span>Contact me</span>
+</a>
                         </div>
                     </div>
                     <div class="email-div-4"><img
@@ -3753,6 +3756,19 @@
         </div>
         <div class="w-embed w-script">
             <script>
+                function scrollToBottom() {
+    let scrollInterval = setInterval(() => {
+        let scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        let pageHeight = document.documentElement.scrollHeight;
+        let windowHeight = window.innerHeight;
+
+        if (scrollPosition + windowHeight >= pageHeight - 5) { // Stop when near bottom
+            clearInterval(scrollInterval);
+        } else {
+            window.scrollBy(0, 50); // Scroll down in small steps
+        }
+    }, 10); // Adjust the interval for smoothness
+}
                 /* selectContract */
                 function selectContract() {
                     let selectBtns = document.querySelectorAll(".js-select-contract");
